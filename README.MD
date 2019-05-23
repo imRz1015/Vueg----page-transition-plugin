@@ -2,7 +2,7 @@
 
 <h3>这个分支主要是为了解决该插件在IOS8.X的版本中不兼容，可能造成项目白屏的问题</h3>
 <p>主要问题在于ES6中，Object.assign()不能被babel转为ES5（也有可能是我配置错了的原因..emmmmmmmm）</p>
-<p>这个分支仅仅将Object.assign()这个方法做了兼容处理，采用for in 的方式去遍历合并对象</p>
+<p>这个分支仅仅将Object.assign()等高级版本的语法做了一些兼容处理，使其兼容低版本</p>
 <p>如果你的babel-polyfill可以正常转码，那么你可以直接使用作者的master分支</p>
 
 <h4>PS:为了方便我还顺便把它抽出来放进了dist文件夹，因为这个分支就算你看到了你也不能通过npm下载，除非作者哪天看到了墙角瑟瑟发抖的我并好心解决了这个问题....如果不行，请先npm i animate.css --save ，然后直接把dist放进你的项目中，然后import vueg from './dist/index.js'就可以了，剩下的就按照作者文档正常使用就OK</h4>
